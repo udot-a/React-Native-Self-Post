@@ -1,14 +1,19 @@
 {
   "expo": {
-    "name": "react-native-self-post",
-    "slug": "react-native-self-post",
+    "name": "Self blog",
+    "slug": "dron-self-post",
+    "privacy": "public",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "icon": "./assets/rn-icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/rn-splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#242832"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,10 +22,14 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dronudot.selfpost",
+      "buildNumber": "1.0.0"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "android": {
+      "package": "com.dronudot.selfpost",
+      "versionCode": 1,
+      "permissions": ["CAMERA", "WRITE_EXTERNAL_STORAGE"]
     }
   }
 }
